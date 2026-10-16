@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <title>PaperPilot AI — Research Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="#" data-page="dashboard">
+                <span class="brand-icon">P</span>
+                <span>PaperPilot<span class="brand-ai"> AI</span></span>
+            </a>
+
+            <div class="workspace-label">WORKSPACE</div>
+
+            <nav class="navigation">
+                <button class="nav-item active" data-page="dashboard">
+                    <span>⌂</span> Overview
+                </button>
+                <button class="nav-item" data-page="papers">
+                    <span>▤</span> Explore papers
+                </button>
+                <button class="nav-item" data-page="assistant">
+                    <span>✳</span> AI research assistant
+                </button>
+                <button class="nav-item" data-page="library">
+                    <span>▣</span> My library
+                </button>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-note">
+                    <span class="note-icon">✦</span>
+                    <strong>Research, reimagined.</strong>
+                    <p>Turn scientific literature into useful insights.</p>
+                </div>
+                <div class="profile">
+                    <div class="avatar">PP</div>
+                    <div>
+                        <strong>Research Workspace</strong>
+                        <small>Personal project</small>
+                    </div>
+                    <span class="profile-menu">···</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-area">
+            <header class="topbar">
+                <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+                <div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumbPage">Overview</strong></div>
+                <div class="topbar-right">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Research workspace</span>
+                    <div class="top-avatar">P</div>
+                </div>
+            </header>
+
+            <div class="page-container">
+
+                <section class="page active" id="page-dashboard">
+                    <div class="welcome-row">
+                        <div>
+                            <div class="eyebrow"><span class="sparkle">✦</span> YOUR RESEARCH WORKSPACE</div>
+                            <h1>Ideas start with<br><span class="gradient-text">a better question.</span></h1>
+                            <p class="lead">Discover research, connect ideas, and explore scientific knowledge with AI.</p>
+                        </div>
+                        <div class="hero-orb" aria-hidden="true">
+                            <div class="orb-ring ring-one"></div>
+                            <div class="orb-ring ring-two"></div>
+                            <div class="orb-core">✳</div>
+                            <span class="orb-dot dot-one"></span>
+                            <span class="orb-dot dot-two"></span>
+                            <span class="orb-dot dot-three"></span>
+                        </div>
+                    </div>
+
+                    <form class="search-box" id="heroSearch">
+                        <span class="search-icon">⌕</span>
+                        <input id="heroQuery" type="search" placeholder="Ask a question or search research papers..." autocomplete="off">
+                        <button class="search-submit" type="submit">Explore <span>↗</span></button>
+                    </form>
+
+                    <div class="suggestions">
+                        <span>Try asking</span>
+                        <button class="suggestion" data-query="Recent advances in artificial intelligence">AI advances</button>
+                        <button class="suggestion" data-query="Retrieval augmented generation evaluation methods">RAG evaluation</button>
+                        <button class="suggestion" data-query="Large language models in healthcare">AI in healthcare</button>
+                    </div>
+
+                    <div class="section-heading">
+                        <div>
+                            <h2>Your research toolkit</h2>
+                            <p>Everything you need to explore the literature.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-grid">
+                        <button class="feature-card" data-page="papers">
+                            <div class="feature-top">
+                                <span class="feature-icon violet">⌕</span>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                            <h3>Discover papers</h3>
+                            <p>Find relevant research using semantic and keyword search.</p>
+                            <span class="feature-link">Explore literature →</span>
+                        </button>
+
+                        <button class="feature-card" data-page="assistant">
+                            <div class="feature-top">
+                                <span class="feature-icon blue">✳</span>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                            <h3>Ask your research AI</h3>
+                            <p>Get evidence-oriented answers from retrieved research.</p>
+                            <span class="feature-link">Start a conversation →</span>
+                        </button>
+
+                        <button class="feature-card" data-page="library">
+                            <div class="feature-top">
+                                <span class="feature-icon green">▤</span>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                            <h3>Build your library</h3>
+                            <p>Keep track of papers that matter to your research.</p>
+                            <span class="feature-link">View saved papers →</span>
+                        </button>
+                    </div>
+
+                    <div class="bottom-grid">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <div>
+                                    <h2>Explore research fields</h2>
+                                    <p>Choose a subject to start exploring.</p>
+                                </div>
+                            </div>
+                            <div class="field-grid">
+                                <button class="field-chip" data-query="Artificial intelligence and machine learning"><span>◈</span> AI & Machine Learning <b>↗</b></button>
+                                <button class="field-chip" data-query="Computer science research"><span>⌘</span> Computer Science <b>↗</b></button>
+                                <button class="field-chip" data-query="Cybersecurity research"><span>⬡</span> Cybersecurity <b>↗</b></button>
+                                <button class="field-chip" data-query="Medical and healthcare research"><span>✚</span> Healthcare <b>↗</b></button>
+                                <button class="field-chip" data-query="Physics research papers"><span>◉</span> Physics <b>↗</b></button>
+                                <button class="field-chip" data-query="Mathematics research papers"><span>∑</span> Mathematics <b>↗</b></button>
+                            </div>
+                        </div>
+
+                        <div class="panel quick-panel">
+                            <div class="quick-icon">✦</div>
+                            <h2>Have a research question?</h2>
+                            <p>Start with a question. Let your sources guide the exploration.</p>
+                            <button class="primary-button" data-page="assistant">Open AI assistant <span>→</span></button>
+                        </div>
+                    </div>
+
+                    <div class="footer-note">PAPERPILOT AI <span>·</span> BUILT FOR CURIOUS MINDS</div>
+                </section>
+
+                <section class="page" id="page-papers">
+                    <div class="page-header">
+                        <div class="eyebrow">LITERATURE DISCOVERY</div>
+                        <h1>Explore <span class="gradient-text">research.</span></h1>
+                        <p class="lead">Search scientific literature by topic, concept, or research question.</p>
+                    </div>
+
+                    <form class="search-box page-search" id="paperSearch">
+                        <span class="search-icon">⌕</span>
+                        <input id="paperQuery" type="search" placeholder="Search papers, methods, or research topics...">
+                        <button class="search-submit" type="submit">Search <span>↗</span></button>
+                    </form>
+
+                    <div class="filter-row">
+                        <span class="filter-label">Search mode</span>
+                        <span class="filter-pill">Hybrid search</span>
+                        <span class="filter-hint">Keyword + semantic retrieval</span>
+                    </div>
+
+                    <div id="paperResults" class="results-area">
+                        <div class="empty-state">
+                            <div class="empty-symbol">⌕</div>
+                            <h3>Your next discovery starts here</h3>
+                            <p>Enter a topic or question above to search the research collection.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="page" id="page-assistant">
+                    <div class="page-header">
+                        <div class="eyebrow">EVIDENCE-ORIENTED AI</div>
+                        <h1>Research <span class="gradient-text">assistant.</span></h1>
+                        <p class="lead">Ask questions, examine findings, and follow the sources.</p>
+                    </div>
+
+                    <div class="chat-panel">
+                        <div class="chat-header">
+                            <div class="chat-avatar">✳</div>
+                            <div><strong>PaperPilot Research AI</strong><small>Answers grounded in retrieved research</small></div>
+                            <span class="chat-badge">RAG WORKSPACE</span>
+                        </div>
+
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="assistant-message">
+                                <div class="message-avatar">✳</div>
+                                <div class="message-content">
+                                    <strong>Let's explore an idea.</strong>
+                                    <p>Ask a research question. I’ll use the connected research collection to look for relevant evidence.</p>
+                                    <div class="example-questions">
+                                        <button data-chat="What are the major challenges in retrieval augmented generation?">Challenges in RAG ↗</button>
+                                        <button data-chat="Compare semantic search and keyword search">Semantic vs keyword search ↗</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="chat-composer" id="chatForm">
+                            <textarea id="chatInput" rows="2" placeholder="Ask a research question..." aria-label="Research question"></textarea>
+                            <div class="composer-bottom">
+                                <span>Answers may be limited by the available sources.</span>
+                                <button class="primary-button" type="submit">Ask AI <span>↑</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="page" id="page-library">
+                    <div class="page-header">
+                        <div class="eyebrow">YOUR COLLECTION</div>
+                        <h1>My <span class="gradient-text">library.</span></h1>
+                        <p class="lead">Your saved research papers, gathered in one place.</p>
+                    </div>
+                    <div id="libraryResults" class="results-area">
+                        <div class="empty-state">
+                            <div class="empty-symbol">▤</div>
+                            <h3>Your library is ready</h3>
+                            <p>Save interesting papers from search results to keep them here.</p>
+                            <button class="primary-button" data-page="papers">Explore papers →</button>
+                        </div>
+                    </div>
+                </section>
+
+                <footer class="global-footer">
+                    <span>PaperPilot AI</span>
+                    <span>Research responsibly. Follow the evidence.</span>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
