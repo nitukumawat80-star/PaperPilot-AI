@@ -1,0 +1,11 @@
+
+streamlit
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+sentence-transformers
+rank-bm25
+python-dotenv
+google-genai
